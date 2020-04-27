@@ -82,6 +82,7 @@ header{
 #icoi:hover,
 #icoi:active{
     color: #22ddeb;
+    transform: scale(1.3);
 }
 .main-nav li .a{
     text-decoration: none;
@@ -102,6 +103,7 @@ header{
 .main-nav li .a:hover,
 .main-nav li .a:active{
     border-bottom: 4px solid #cccccc;
+    
 }
 
 
