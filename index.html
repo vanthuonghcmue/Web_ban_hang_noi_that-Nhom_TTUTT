@@ -5,9 +5,6 @@
 
     <title>Nội thất| Ngoại thất và Decor| Hàng xuất khẩu cao cấp</title>
 
-    <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
-    <link rel="stylesheet" href="./resources/css/bootstrap.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./vendors/fonts/css/fontawesome.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -18,30 +15,35 @@
     <link rel="stylesheet" href="/redirect?Id=CvmsVv9asuSiOaRBBz9urpS909ixNzNqI37%2b8O1yQr4%3d">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500&display=swap"
         rel="stylesheet">
-        
+
     <script src="https://kit.fontawesome.com/973a1060ee.js" crossorigin="anonymous"></script>
-    <script src="./resources/js/jquery-3.5.0.js"></script>
-    <script src="./resources/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+    <link rel="stylesheet" href="./vendors/css/bootstrap.css">
+    <link rel="stylesheet" href="./resources/css/queries.css">
+    <link rel="stylesheet" href="./vendors/css/bootstrap-grid.css">
+    <script src="./vendors/js/jquery-3.5.0.js"></script>
+
 
 </head>
 
 <body>
-    <nav  class="main-nav">
-        <ol >
-            <li><a class="a" href="#">Nội thất</a></li>
-            <li ><a class="a" href="#">Ngoại Thất</a></li>
-            <li ><a class="a" href="#">Decor</a></li>
-            <li ><a class="a" href="#">Sân Vườn</a></li>
-            <li ><a class="a" href="#">Đồ gia dụng</a></li>
-            <li ><a class="a" href="#">Thương hiệu</a></li>
-            <a class="fas fa-shopping-cart " href="#" id="icoi"></a>
-            <a class="far fa-user " href="#" id="icoi"></a>
-        </ol>
-    </nav>
-    <header>
-        <a href="#"><img class="logo" src="./resources/img/logoCong_ty_Co_Phan_Kien_Truc_Xay_Dung_song_phat.jpg.png"
-                alt="logo"></a>
 
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li><a class="a" href="#">Nội thất</a></li>
+                <li><a class="a" href="#">Ngoại Thất</a></li>
+                <li><a class="a" href="#">Decor</a></li>
+                <li><a class="a" href="#">Sân Vườn</a></li>
+                <li><a class="a" href="#">Đồ gia dụng</a></li>
+                <li><a class="a" href="#">Thương hiệu</a></li>
+                <a class="fas fa-shopping-cart " href="#" id="icoi"></a>
+                <a class="far fa-user " href="#" id="icoi"></a>
+            </ul>
+            <a href="#"><img class="logo" src="./resources/img/logoCong_ty_Co_Phan_Kien_Truc_Xay_Dung_song_phat.jpg.png"
+                    alt="logo"></a>
+        </nav>
         <div class="clearfix"> </div>
         <div class="ROW">
             <div class="heading-main-box">
@@ -52,8 +54,8 @@
             </div>
         </div>
     </header>
-    <section class="About-section row ROW">
-        <div class="bosuutap col md-4">
+    <section class="About-section row ">
+        <div class="bosuutap col span_1_of_2">
             <p class="tieude">2020 Collection<br></p>
             <p class="gioithieu">
                 Bộ sưu tập các sản phẩm ngoài trời lớn nhất Việt Nam.-
@@ -65,7 +67,7 @@
         </div>
 
 
-        <div class="gioithieuimg col md-8">
+        <div class="gioithieuimg col span-1_of_2">
             <a href="#"><img src="./resources/img/beda79_e4842eecc860493db672f0e903a012c4_mv2.webp" alt="photo"></a>
         </div>
 
@@ -81,11 +83,12 @@
             <div class="col md-6 about-picture">
 
                 <a href="#"> <img style="height: 100%;" src="./resources/img/soddfa.webp" alt="photo"></a>
-                <p href="#" class="picture-title"> SoFa</p>
+                <p href="#" class="picture-title"> Sofa</p>
             </div>
         </div>
+
         <div class="row colum">
-            <div class="col md-4 about-picture">
+            <div class="col md about-picture">
 
                 <a href="#"> <img src="./resources/img/chaucay.webp" alt="photo"></a>
                 <p class="picture-title"> Chậu Cây</p>
@@ -98,16 +101,16 @@
             <div class="col md-4 about-picture">
 
                 <a href="#"> <img src="./resources/img/decor.webp" alt="photo"></a>
-                <p class="picture-title"> Decor</p>
+                <p class="picture-title"> Trang trí</p>
             </div>
         </div>
     </section>
     <section class="advertisement-section row">
-        <div class="col-md-6 ">
+        <div class="col md-6 ">
             <a href="#"><img class="advertisement-section-img" src="./resources/img/gt.webp" alt="poto"> </a>
         </div>
 
-        <div class="noidung col-md-6">
+        <div class="noidung col md-6">
             <p class="tieude2">Made in Viet Nam ...<br></p>
             <p class="modau">Tất cả những gì cần cho ngôi nhà của bạn</p>
             <p class="gioithieu2 ">
@@ -153,10 +156,11 @@
                 <li><i class="fas fa-map-marked-alt small-icon"> </i> Address: Showroom 10 đường B4, KDT SALA
 
                     Quận 2, TP. HCM</li>
-                <li><i class="fas fa-envelope small-icon">  </i> Email: info@hoouzy.com</li>
-                <li><i class="fas fa-phone small-icon">    </i>  Tel:  0888.05.8338 / 0989.881882</li>
+                <li><i class="fas fa-envelope small-icon"> </i> Email: info@hoouzy.com</li>
+                <li><i class="fas fa-phone small-icon"> </i> Tel: 0888.05.8338 / 0989.881882</li>
             </ul>
             <ul class="social-icons">
+
                 <li><a href="#" class="fab fa-facebook"></a></li>
                 <li><a href="#" class="fab fa-twitter"></a></li>
                 <li><a href="#" class="fab fa-instagram"></a></li>
@@ -169,6 +173,35 @@
             Copyright &copy; 2020 by TTUTT TEAM
         </p>
     </footer>
+    <link rel="stylesheet" href="./resources/js/scripts.js">
+   
+    <script src="./vendors/js/bootstrap.js"></script>
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
+    <script>
+        $(document).ready( 
+            // function(){
+            //     $('h').click(
+            //         function(){
+            //             $(this).css('color','red');
+            //         }
+            //     )
+            // })
+     function(){
+        $(".About-section").waypoint(
+            function(direction){
+            if( direction == "down"){
+                $("nav").addClass("sticky");
+            }
+            else {
+                $("nav").removeClass("sticky");
+            }
+            },{
+                offset: "600 px"
+            }
+        )        
+    }
+ );
+    </script>
 </body>
 
 </html>
