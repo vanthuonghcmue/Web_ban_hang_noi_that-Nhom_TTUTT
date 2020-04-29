@@ -16,21 +16,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500&display=swap"
         rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/973a1060ee.js" crossorigin="anonymous"></script>
+  
 
     <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
     <link rel="stylesheet" href="./vendors/css/bootstrap.css">
     <link rel="stylesheet" href="./resources/css/queries.css">
     <link rel="stylesheet" href="./vendors/css/bootstrap-grid.css">
     <script src="./vendors/js/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/973a1060ee.js" crossorigin="anonymous"></script>
 
 
 </head>
 
 <body>
 
-    <header>
+    <header id="Home">
         <nav>
+            <a href="#Home"><img class="logo" src="./resources/img/logoCong_ty_Co_Phan_Kien_Truc_Xay_Dung_song_phat.jpg.png"
+                alt="logo"></a>
             <ul class="main-nav">
                 <li><a class="a" href="#">Nội thất</a></li>
                 <li><a class="a" href="#">Ngoại Thất</a></li>
@@ -41,8 +44,11 @@
                 <a class="fas fa-shopping-cart " href="#" id="icoi"></a>
                 <a class="far fa-user " href="#" id="icoi"></a>
             </ul>
-            <a href="#"><img class="logo" src="./resources/img/logoCong_ty_Co_Phan_Kien_Truc_Xay_Dung_song_phat.jpg.png"
-                    alt="logo"></a>
+           
+   
+           
+             <div class="mobile-nav-icon"><i class="fa fa-bars "></i></div>
+            
         </nav>
         <div class="clearfix"> </div>
         <div class="ROW">
@@ -173,35 +179,11 @@
             Copyright &copy; 2020 by TTUTT TEAM
         </p>
     </footer>
-    <link rel="stylesheet" href="./resources/js/scripts.js">
-   
+
     <script src="./vendors/js/bootstrap.js"></script>
     <script src="./vendors/js/jquery.waypoints.min.js"></script>
-    <script>
-        $(document).ready( 
-            // function(){
-            //     $('h').click(
-            //         function(){
-            //             $(this).css('color','red');
-            //         }
-            //     )
-            // })
-     function(){
-        $(".About-section").waypoint(
-            function(direction){
-            if( direction == "down"){
-                $("nav").addClass("sticky");
-            }
-            else {
-                $("nav").removeClass("sticky");
-            }
-            },{
-                offset: "600 px"
-            }
-        )        
-    }
- );
-    </script>
+    <script src="./resources/js/scripts.js"></script>
+   
 </body>
 
 </html>

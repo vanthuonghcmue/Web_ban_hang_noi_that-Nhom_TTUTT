@@ -1,16 +1,16 @@
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1120px){
     html{
         font-size: 16px;
     }
     .main-nav{
-        visibility: hidden;
+        display: none;
     }
     .heading-main-box{
         transform: translate(-10%,10%);
     }
     .logo{
         
-         margin-top: -120px;
+         margin-top: -10px;
     }
     .gioithieuimg a img{
          width: 400px;
@@ -21,6 +21,10 @@
     h{
         font-size: 395%;
     }
+    .mobile-nav-icon  {
+        display: block;
+        margin-top: -30px;
+        }
 }   
 @media only screen and (max-width:1023px){
     h{
@@ -52,8 +56,11 @@
 }
 @media only screen and (max-width:767px){
     
-    .logo{
+    /* .logo{
         margin-top: -200px;
+   } */
+   .heading-main-box{
+    transform: translate(-5%,60%);
    }
     h{
         letter-spacing: 2px;
@@ -89,9 +96,18 @@
 }
 
 @media only screen and (max-width:480px){
-html{
+/* html{
     font-size: 12px;
-}
+} */
+
+h{
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    
+    line-height: 150%;
+    
+    font-size: 200%;
+}   
 .bosuutap{
     word-break: normal ;
     width: 80%;
@@ -108,7 +124,7 @@ html{
     margin-bottom: 20px;
 }
 .picture-title{
-    font-size: 15px;   
+    font-size: 12px;   
 }
 .tieude2{
     
@@ -118,9 +134,11 @@ html{
 }
 .advertisement-section-img{
     width: 70%;
-    margin: 0px 60px;
-    }
-    .gioithieu2{
+    margin: 0px 10%;
+    
+    
+}
+.gioithieu2{
         margin: 0 10px;
-    } 
+} 
 }
