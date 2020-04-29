@@ -9,7 +9,7 @@ $(document).ready(
                 $("nav").removeClass("sticky");
              }
             },{
-             offset: "700 px"
+             offset: "500 px"
              }
         )  
 // scroll
