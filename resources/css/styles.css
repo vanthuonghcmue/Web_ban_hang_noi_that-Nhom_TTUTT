@@ -67,7 +67,7 @@ header{
     width: 200px;
     float:left;
     margin-left: 20px ;
-    margin-top: 20px;
+    margin-top: 10px;
     display: block;    
 }
 
@@ -83,12 +83,13 @@ header{
     color: #22ddeb;
     transform: scale(1.3);
 }
-#menu {
+/* #menu {
     width: 100%; 
     position: fixed;
     z-index: 1;  
-}
+} */
 .main-nav{
+ 
     float:right;
     list-style: none;
     margin-right: 20px;
@@ -119,7 +120,7 @@ header{
     border-bottom: 4px solid #cccccc;
     
 }
-ul.main-nav > li {
+/* ul.main-nav > li {
     list-style: none;
     float: left;
     position: relative;
@@ -131,23 +132,26 @@ ul.main-nav > li > a{
     padding: 0px 15px 0px 15px;
     line-height: 50px;
     display: block;
-}
+} */
 
-ul.main-nav > li > a:hover {
-    background: #929C99;
+/* ul.main-nav > li > a:hover {
+   
     border-radius: 5px;
-    color: blue;
+    
     transition: ease-in 0.30s;
     -moz-transition: ease-in 0.30s;
     -webkit-transition: ease-in 0.30s;
-}
+} */
 
 ul.submenu {
     width:  250px;
     background: rgb(49, 78, 110);
     min-height: 150px;
     display: none;
-    position: absolute;
+    /* position: absolute; */
+   
+    position: fixed;
+    z-index: 1;  
 }
 ul.submenu li {
     list-style: none;
@@ -158,7 +162,6 @@ ul.submenu li a{
     color: #FFF;
     text-decoration: none;
     display:  block;
-    border-bottom: 0px solid #ccc;
     line-height: 50px;
     text-indent: 10px;
 }
@@ -167,8 +170,7 @@ ul.submenu li a:hover {
     transition: ease-in 0.30s;
     -moz-transition: ease-in 0.30s;
     -webkit-transition: ease-in 0.30s;
-    background: #929C99;
-    color: blue;
+    border-bottom: 1px solid #ccc;
     border-radius: 5px;
 }
 

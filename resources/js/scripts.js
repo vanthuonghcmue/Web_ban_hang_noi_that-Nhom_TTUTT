@@ -12,7 +12,7 @@ $(document).ready(
              offset: "500 px"
              }
         )  
-// scroll
+    // scroll
          $('a').click(function(event){
              $('html, body').animate({
                     scrollTop: $( $.attr(this, 'href') ).offset().top
