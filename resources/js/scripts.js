@@ -33,8 +33,48 @@ $(document).ready(
                 $(".mobile-nav-icon i").removeClass("fa-times");
             }
         }
-          
         )
-    }
-);
+        var stt=0;
+        starImg=$("img.slide:first").attr("stt");
+        endImg=$("img.slide:last").attr("stt");
+        $("img.slide").each(function(){
+            if($(this).is(':visible'))
+            stt = $(this).attr("stt");
+        });
 
+        $(".gioithieuimg").click(function(){
+        if(stt == endImg) {
+            stt=-1;
+        }
+        gioithieuimg= ++stt;
+        $("img.slide").hide();
+        $("img.slide").eq(gioithieuimg).show();
+        });
+
+        setInterval(function(){
+        $(".gioithieuimg").click();
+        },3000);
+
+
+          
+        var st=0;
+        starImg=$("img.advertisement-section-img:first").attr("st");
+        endImg=$("img.advertisement-section-img:last").attr("st");
+        $("img.advertisement-section-img").each(function(){
+            if($(this).is(':visible'))
+            st = $(this).attr("st");
+        });
+
+        $("#water").click(function(){
+        if(st == endImg) {
+            st=-1;
+        }
+        water = ++st;
+        $("img.advertisement-section-img").hide();
+        $("img.advertisement-section-img").eq(water).show();
+        });
+
+        setInterval(function(){
+        $("#water").click();
+        },3000);
+    });
