@@ -211,7 +211,7 @@ font-size: 400%;
     left: 0px;
     z-index: 900;
     width: 100%;
-   
+    box-shadow: 0 0px 50px 0 rgba(46, 44, 44, 0.8);
 }
 .sticky .logo{
     width: 200px;
@@ -311,7 +311,7 @@ filter:brightness(50%) blur(2px);
 }
 .advertisement-section-img{
 width: 70%;
-margin: 0px 60px;
+
 }
 .modau:after{
     content: " ";
@@ -331,7 +331,12 @@ margin: 0px 60px;
    
 }
 .noidung {
-   width: 80%;
+   width: 80%;   
+  
+}
+.noidung >.gioithieu2 {
+   width: 90%;   
+  
 }
 .tieude2{
     font-family: 'Dancing Script', cursive;
@@ -384,12 +389,30 @@ padding: 50px;
     text-decoration: none;
     float: left;
 }
-.social-icons li a:hover,
-.social-icons li a :active{
+#icon1 :hover,
+#icon1 :active{
     transform: scale(1.3);
-    color:rgb(238, 192, 66) ;
+    color:rgb(61, 90, 153) ;
     
 } 
+#icon2 :hover,
+#icon2 :active{
+    transform: scale(1.3);
+    color:rgb(132, 204, 248) ;
+    
+} 
+#icon3 :hover,
+#icon3 :active{
+    transform: scale(1.3);
+    color:rgb(224, 152, 155);
+    
+} 
+#icon4 :hover,
+#icon4 :active{
+    transform: scale(1.3);
+    color:rgb(215, 73, 55);
+} 
+
 
 
 /*..    ...........................................................*/
@@ -402,3 +425,29 @@ footer{
     padding: 20px;
 }
 
+
+#messenger{
+font-size: 30px;
+bottom: 10px;
+right: 10px;
+text-decoration: none;
+color: white;
+position:relative ;
+margin: 10px;
+animation-name: mess-anima;
+animation-duration: 1s;
+animation-iteration-count:infinite;
+animation-timing-function:ease-in-out;
+animation-delay: 2s;
+}
+.messenger{
+background-color: #5a5a5a;
+width: 50px;
+height: 50px;
+position: fixed;
+bottom: 10px;
+right: 45px;
+padding: 10px;
+border-radius: 80px;
+transform: scaleX(-1);
+}

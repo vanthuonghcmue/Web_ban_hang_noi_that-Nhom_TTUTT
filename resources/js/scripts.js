@@ -34,6 +34,8 @@ $(document).ready(
             }
         }
         )
+
+        // Hiệu ứng chuyển động ảnh
         var stt=0;
         starImg=$("img.slide:first").attr("stt");
         endImg=$("img.slide:last").attr("stt");
