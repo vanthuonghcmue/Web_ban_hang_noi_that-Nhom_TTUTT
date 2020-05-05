@@ -117,6 +117,10 @@ $(document).ready(
                 }
             }
         });
+        // mini map
+       
+          
+        
     });
 
   

@@ -25,6 +25,10 @@
         display: block;
         margin-top: -30px;
         }
+    .map{
+            width: 40%;
+           
+    }
 }   
 @media only screen and (max-width:1023px){
     h{
@@ -52,6 +56,13 @@
     }
     .picture-title{
         font-size: 30px;   
+    }
+ 
+    .map{
+      display: none;
+    }
+    .contact-section{
+        height: 20vh;
     }
 }
 @media only screen and (max-width:767px){
@@ -93,6 +104,8 @@
         width: 300px;
         margin: 0px 30%;
         }
+
+
 }
 
 @media only screen and (max-width:480px){

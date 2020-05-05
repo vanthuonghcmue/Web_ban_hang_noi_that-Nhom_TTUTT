@@ -366,6 +366,7 @@ line-height:200% ;
 /* margin-top: 1px ; */
 word-spacing: 2px;
 padding: 50px;
+margin-left: 10px auto;
 
 }
  .small-icon{
@@ -413,7 +414,15 @@ padding: 50px;
     color:rgb(215, 73, 55);
 } 
 
+.map{
+    float: right;
+  margin: 15px 10px;
 
+}
+
+.contact{
+    float: left;
+}
 
 /*..    ...........................................................*/
 /*............................FOOTER...........................*/
