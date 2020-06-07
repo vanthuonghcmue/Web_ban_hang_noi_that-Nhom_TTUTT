@@ -1,34 +1,34 @@
-$(document).ready( 
-    function(){
+$(document).ready(
+    function () {
         $(".About-section").waypoint(
-            function(direction){
-                if( direction == "down"){
+            function (direction) {
+                if (direction == "down") {
                     $("nav").addClass("sticky");
                 }
-                 else {
-                $("nav").removeClass("sticky");
-             }
-            },{
-             offset: "500 px"
-             }
-        )  
-    // scroll
-         $('a').click(function(event){
-             $('html, body').animate({
-                    scrollTop: $( $.attr(this, 'href') ).offset().top
-                 }, 900);
-                event.preventDefault();
-            }
+                else {
+                    $("nav").removeClass("sticky");
+                }
+            }, {
+            offset: "500 px"
+        }
+        )
+        // scroll
+        $('a').click(function (event) {
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 900);
+            event.preventDefault();
+        }
         )
 
-    // mobile-nav
-        $(".mobile-nav-icon").click(function(){
+        // mobile-nav
+        $(".mobile-nav-icon").click(function () {
             $(".main-nav").slideToggle(200);
-            if($(".mobile-nav-icon i").hasClass("fa-bars")){
+            if ($(".mobile-nav-icon i").hasClass("fa-bars")) {
                 $(".mobile-nav-icon i").addClass("fa-times");
                 $(".mobile-nav-icon i").removeClass("fa-bars");
             }
-            else{
+            else {
                 $(".mobile-nav-icon i").addClass("fa-bars");
                 $(".mobile-nav-icon i").removeClass("fa-times");
             }
@@ -36,49 +36,49 @@ $(document).ready(
         )
 
         // Hiệu ứng chuyển động ảnh
-        var stt=0;
-        starImg=$("img.slide:first").attr("stt");
-        endImg=$("img.slide:last").attr("stt");
-        $("img.slide").each(function(){
-            if($(this).is(':visible'))
-            stt = $(this).attr("stt");
+        var stt = 0;
+        starImg = $("img.slide:first").attr("stt");
+        endImg = $("img.slide:last").attr("stt");
+        $("img.slide").each(function () {
+            if ($(this).is(':visible'))
+                stt = $(this).attr("stt");
         });
 
-        $(".gioithieuimg").click(function(){
-        if(stt == endImg) {
-            stt=-1;
-        }
-        gioithieuimg= ++stt;
-        $("img.slide").hide();
-        $("img.slide").eq(gioithieuimg).show();
+        $(".gioithieuimg").click(function () {
+            if (stt == endImg) {
+                stt = -1;
+            }
+            gioithieuimg = ++stt;
+            $("img.slide").hide();
+            $("img.slide").eq(gioithieuimg).show();
         });
 
-        setInterval(function(){
-        $(".gioithieuimg").click();
-        },3000);
+        setInterval(function () {
+            $(".gioithieuimg").click();
+        }, 3000);
 
 
-          
-        var st=0;
-        starImg=$("img.advertisement-section-img:first").attr("st");
-        endImg=$("img.advertisement-section-img:last").attr("st");
-        $("img.advertisement-section-img").each(function(){
-            if($(this).is(':visible'))
-            st = $(this).attr("st");
+
+        var st = 0;
+        starImg = $("img.advertisement-section-img:first").attr("st");
+        endImg = $("img.advertisement-section-img:last").attr("st");
+        $("img.advertisement-section-img").each(function () {
+            if ($(this).is(':visible'))
+                st = $(this).attr("st");
         });
 
-        $("#water").click(function(){
-        if(st == endImg) {
-            st=-1;
-        }
-        water = ++st;
-        $("img.advertisement-section-img").hide();
-        $("img.advertisement-section-img").eq(water).show();
+        $("#water").click(function () {
+            if (st == endImg) {
+                st = -1;
+            }
+            water = ++st;
+            $("img.advertisement-section-img").hide();
+            $("img.advertisement-section-img").eq(water).show();
         });
 
-        setInterval(function(){
-        $("#water").click();
-        },3000);
+        setInterval(function () {
+            $("#water").click();
+        }, 3000);
 
         // bấm để xem hình 
 
@@ -90,11 +90,11 @@ $(document).ready(
             gallery: {
                 enabled: true,
                 navigateByImgClick: true,
-                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
             },
             image: {
                 tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-                titleSrc: function(item) {
+                titleSrc: function (item) {
                     return item.el.attr('title') + '<small>collection 2020</small>';
                 }
             }
@@ -108,20 +108,18 @@ $(document).ready(
             gallery: {
                 enabled: true,
                 navigateByImgClick: true,
-                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
             },
             image: {
                 tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-                titleSrc: function(item) {
+                titleSrc: function (item) {
                     return item.el.attr('title') + '<small>collection 2020</small>';
                 }
             }
         });
-        // mini map
-       
-          
-        
-    });
 
-  
-        
+    }
+);
+
+
+
